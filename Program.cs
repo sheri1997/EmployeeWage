@@ -6,13 +6,13 @@ namespace Employeewage
     {
         static void Main(string[] args)
         {
-            int FullTimeEmployee = 1;
+            int PartTime = 1;
             int WagePerHour = 20;
             int Hours = 0;
             int Wage = 0;
             Random random = new Random();
             int Check = random.Next(0, 2);
-            if (Check == FullTimeEmployee)
+            if (Check == PartTime)
             {
                 Hours = 8;
             }
@@ -21,7 +21,7 @@ namespace Employeewage
                 Hours = 0;
             }
             Wage = Hours * WagePerHour;
-            Console.WriteLine("Wage of The Employee is " + Wage);
+            Console.WriteLine("Wage of The Part Time Employee is " + Wage);
         }
     }
 }
