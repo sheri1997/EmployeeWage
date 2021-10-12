@@ -7,16 +7,21 @@ namespace Employeewage
         static void Main(string[] args)
         {
             int FullTimeEmployee = 1;
+            int WagePerHour = 20;
+            int Hours = 0;
+            int Wage = 0;
             Random random = new Random();
-            int Check = random.Next(0, 2);//Random Number Generated
-            if (Check == FullTimeEmployee)//if check=1
+            int Check = random.Next(0, 2);
+            if (Check == FullTimeEmployee)
             {
-                Console.WriteLine("Employee is Present");
+                Hours = 8;
             }
-            else//if check=0
+            else
             {
-                Console.WriteLine("Employee is Absent");
+                Hours = 0;
             }
+            Wage = Hours * WagePerHour;
+            Console.WriteLine("Wage of The Employee is " + Wage);
         }
     }
 }
