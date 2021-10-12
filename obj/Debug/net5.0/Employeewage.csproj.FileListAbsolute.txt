@@ -1,0 +1,16 @@
+D:\Brize\github\Employeewage\bin\Debug\net5.0\Employeewage.exe
+D:\Brize\github\Employeewage\bin\Debug\net5.0\Employeewage.deps.json
+D:\Brize\github\Employeewage\bin\Debug\net5.0\Employeewage.runtimeconfig.json
+D:\Brize\github\Employeewage\bin\Debug\net5.0\Employeewage.runtimeconfig.dev.json
+D:\Brize\github\Employeewage\bin\Debug\net5.0\Employeewage.dll
+D:\Brize\github\Employeewage\bin\Debug\net5.0\ref\Employeewage.dll
+D:\Brize\github\Employeewage\bin\Debug\net5.0\Employeewage.pdb
+D:\Brize\github\Employeewage\obj\Debug\net5.0\Employeewage.csproj.AssemblyReference.cache
+D:\Brize\github\Employeewage\obj\Debug\net5.0\Employeewage.GeneratedMSBuildEditorConfig.editorconfig
+D:\Brize\github\Employeewage\obj\Debug\net5.0\Employeewage.AssemblyInfoInputs.cache
+D:\Brize\github\Employeewage\obj\Debug\net5.0\Employeewage.AssemblyInfo.cs
+D:\Brize\github\Employeewage\obj\Debug\net5.0\Employeewage.csproj.CoreCompileInputs.cache
+D:\Brize\github\Employeewage\obj\Debug\net5.0\Employeewage.dll
+D:\Brize\github\Employeewage\obj\Debug\net5.0\ref\Employeewage.dll
+D:\Brize\github\Employeewage\obj\Debug\net5.0\Employeewage.pdb
+D:\Brize\github\Employeewage\obj\Debug\net5.0\Employeewage.genruntimeconfig.cache
