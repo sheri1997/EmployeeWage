@@ -9,11 +9,14 @@ namespace Employeewage
             const int PartTime = 1;
             const int FullTimeEmployee = 2;
             int WagePerHour = 20;
+            int WorkingDays = 2;
+            int TotalWorkingDays = 0;
+            int HoursInaMonth = 100;
             int Hours = 0;
-            int Wage = 0;
-            int MonthlyWage = 0;
-            for (int day = 1; day <= 20; day++)
+            int TotalEmpHours = 0;
+            while (TotalEmpHours <= HoursInaMonth && TotalWorkingDays < WorkingDays)
             {
+                TotalWorkingDays++;
                 Random random = new Random();
                 int Check = random.Next(0, 3);
                 switch (Check)
@@ -28,10 +31,10 @@ namespace Employeewage
                         Hours = 0;
                         break;
                 }
-                Wage = Hours * WagePerHour;
-                MonthlyWage = MonthlyWage + Wage;
+                TotalEmpHours = TotalEmpHours + Hours;
             }
-            Console.WriteLine("Monthly Wage of The Employee is " + MonthlyWage);
+            int TotalWage = TotalEmpHours * WagePerHour;
+            Console.WriteLine("Total Wage of The Employee is " + TotalWage);
         }
     }
 }
