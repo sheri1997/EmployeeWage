@@ -11,22 +11,27 @@ namespace Employeewage
             int WagePerHour = 20;
             int Hours = 0;
             int Wage = 0;
-            Random random = new Random();
-            int Check = random.Next(0, 3);
-            switch (Check)
+            int MonthlyWage = 0;
+            for (int day = 1; day <= 20; day++)
             {
-                case PartTime:
-                    Hours = 8;
-                    break;
-                case FullTimeEmployee:
-                    Hours = 16;
-                    break;
-                default:
-                    Hours = 0;
-                    break;
+                Random random = new Random();
+                int Check = random.Next(0, 3);
+                switch (Check)
+                {
+                    case PartTime:
+                        Hours = 8;
+                        break;
+                    case FullTimeEmployee:
+                        Hours = 16;
+                        break;
+                    default:
+                        Hours = 0;
+                        break;
+                }
+                Wage = Hours * WagePerHour;
+                MonthlyWage = MonthlyWage + Wage;
             }
-            Wage = Hours * WagePerHour;
-            Console.WriteLine("Wage of The Part Time Employee is " + Wage);
+            Console.WriteLine("Monthly Wage of The Employee is " + MonthlyWage);
         }
     }
 }
