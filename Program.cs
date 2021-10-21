@@ -6,10 +6,22 @@ namespace Employeewage
     {
         public const int PartTime = 1;
         public const int FullTime = 2;
-        public static int empwage(string company,int emprateperhour,int noofwokingdays,int maxhourspermonth)
+        private string company;
+        private int emprateperhour;
+        private int noofworkingdays;
+        private int maxhourpermonth;
+        private int totalempwage;
+        public Program(string company, int emprateperhour,int noofworkingdays,int maxhourpermonth)
+        {
+            this.company = company;
+            this.emprateperhour = emprateperhour;
+            this.noofworkingdays = noofworkingdays;
+            this.maxhourpermonth = maxhourpermonth;
+        }
+        public void  empwage()
         {
             int emphours = 0, totalemphours = 0, totalworkingdays = 0;
-            while(totalemphours<=maxhourspermonth && totalworkingdays<noofwokingdays)
+            while(totalemphours<=this.maxhourpermonth && totalworkingdays<this.noofworkingdays)
             {
                 totalworkingdays++;
                 Random random = new Random();
@@ -29,14 +41,21 @@ namespace Employeewage
                 totalemphours += emphours;
                 Console.WriteLine("Day#" + totalworkingdays + "Emp Hrs" + emphours);
             }
-            int totalempwage = totalemphours * emprateperhour;
+            int totalempwage = totalemphours * this.emprateperhour;
             Console.WriteLine("Total employee Wage for the company" + company + totalempwage);
-            return totalempwage;
+        }
+        public string toString()
+        {
+            return "Total Employee Wage for Company:" + this.company + "is" + this.totalempwage;
         }
         static void Main(string[] args)
         {
-            empwage("Dmart", 20, 2, 10);
-            empwage("Reliance", 10, 4, 20);
+            Program Dmart = new Program("Dmart", 20, 2, 20);
+            Program Relience = new Program("Relience", 10, 4, 20);
+            Dmart.empwage();
+            Console.WriteLine(Dmart.toString());
+            Relience.empwage();
+            Console.WriteLine(Relience.toString());
         }
     }
 }
